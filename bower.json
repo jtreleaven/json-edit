@@ -1,5 +1,5 @@
 {
-  "name": "json-edit",
+  "name": "angular-json-edit",
   "version": "0.3.0",
   "description": "User friendly, visual JSON editor built as an AngularJS directive. Provides a basic GUI to edit JSON.",
   "repository": "https://github.com/jtreleaven/json-edit",
