@@ -1,0 +1,52 @@
+'use strict';
+
+var app = angular.module('exampleApp', ['json-edit']);
+
+function MainViewCtrl($scope, $filter) {
+
+  // example JSON
+  $scope.jsonData = {
+    x: {
+      x: {
+        x: {
+          x: {
+            x: {
+              x: [
+                true,
+                false,
+                3,
+                4,
+                5
+              ]
+            }
+          }
+        }
+      }
+    },
+    Name: "Joe",
+    "Last Name": "Miller",
+    Address: {
+      Street: "Neverland 42"
+    },
+    Hobbies: [
+      "doing stuff",
+      "dreaming"
+    ]
+  };
+
+  $scope.showJsonString = function () {
+    alert($scope.jsonString);
+  };
+
+  $scope.$watch('jsonData', function(json) {
+    $scope.jsonString = $filter('json')(json);
+  }, true);
+  $scope.$watch('jsonString', function(json) {
+    try {
+      $scope.jsonData = JSON.parse(json);
+      $scope.wellFormed = true;
+    } catch(e) {
+      $scope.wellFormed = false;
+    }
+  }, true);
+}

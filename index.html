@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="JSONedit">
+<html ng-app="exampleApp">
 <head>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
@@ -8,14 +8,14 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
     <script src="js/directives.js"></script>
-    <script src="js/JSONedit.js"></script>
+    <script src="js/json-edit.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <a href="https://github.com/mb21/JSONedit"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/jtreleaven/json-edit"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
 
     <div id="mainView" ng-controller="MainViewCtrl">
-        <h2>JSONedit</h2>
+        <h2>json-edit</h2>
 
         <div class="jsonView">
             <json child="jsonData" json-change-key="false" json-change-order="false" json-add="false" json-delete="false" expanded-level="9" type="object"></json>
