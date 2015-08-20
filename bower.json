@@ -5,6 +5,9 @@
   "repository": "https://github.com/jtreleaven/json-edit",
   "homepage": "http://jtreleaven.github.io/json-edit/",
   "license": "MIT License",
+  "authors": [
+      "Jeff Treleaven <jtreleaven262@gmail.com>"
+  ],
   "main": ["css/styles.css", "js/directives.js"],
   "ignore": ["index.html", "js/json-edit.js"],
   "dependencies": {
